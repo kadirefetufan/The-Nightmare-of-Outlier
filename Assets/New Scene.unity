@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2050014957}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.023157984, g: 0.022640407, b: 0.022931248, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12235,7 +12235,7 @@ Terrain:
   m_DrawTreesAndFoliage: 1
   m_StaticShadowCaster: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 22ff8771d87ef27429e670136399094b, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: 7ddb07f91da7065499ff7264dd026365, type: 2}
   m_BakeLightProbesForTrees: 0
   m_PreserveTreePrototypeLayers: 1
   m_DeringLightProbesForTrees: 1
@@ -13104,6 +13104,8 @@ MonoBehaviour:
   m_moonLight: {fileID: 0}
   WeatherPresent: 0
   WeatherSystem: {fileID: 0}
+  SunHDLightData: {fileID: 0}
+  MoonHDLightData: {fileID: 0}
   m_sunLightExists: 1
   m_moonLightExists: 0
 --- !u!4 &405169956
@@ -36023,43 +36025,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6107818941015362535, guid: 1e263f019ddd4f44a8e8e460b8c89abb, type: 3}
   m_PrefabInstance: {fileID: 2016529742}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &1017818386
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Stamper Cached Render Texture
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 1025
-  m_Height: 1025
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 0
-  m_ColorFormat: 49
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!4 &1020492113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4846720859247739437, guid: 7b2aa901361134c41ab5d7d475e237e0, type: 3}
@@ -39485,13 +39450,13 @@ MonoBehaviour:
   m_showSeaLevelPlane: 0
   m_showRulers: 0
   m_syncHeightmaps: 1
-  m_stampDirty: 0
+  m_stampDirty: 1
   m_worldMapStampToken: {fileID: 0}
   m_recordUndo: 0
   m_currentStamperUndoOperation: 0
   m_stamperUndoOperations: []
   m_linkedBiomeController: {fileID: 0}
-  m_cachedRenderTexture: {fileID: 1017818386}
+  m_cachedRenderTexture: {fileID: 0}
   m_cachedMaskTexture: {fileID: 933267058}
   m_drawPreview: 1
   m_showSeaLevelinStampPreview: 1
@@ -59102,7 +59067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687728110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 81.592766, y: 40.293503, z: -99.81119}
+  m_LocalPosition: {x: 79.92213, y: 32.783676, z: -96.90495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -92205,7 +92170,7 @@ MonoBehaviour:
   m_Name: (Clone)
   m_EditorClassIdentifier: 
   ProfileVersion: 3.3.1
-  m_reimportHDRPShader: 0
+  m_reimportHDRPShader: 1
   m_savedFromScene: 
   m_gaiaTimeOfDay:
     m_todStartingType: 0
@@ -92239,6 +92204,8 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: 19774c7b570298d45a79f1009fae78d7
     m_directToCamera: 0
     m_postProcessingProfileGUIDURP: f730ec2a2de88db4b80f44d5c13539b0
+    m_environmentProfileHDRP: {fileID: 0}
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: cb3cb9314bd7d744fad2b4dcba95159b
     m_environmentProfileGUIDHDRP: 6dde68f717c524c498133848b83ff17b
     m_ambientAudio: {fileID: 8300000, guid: 2c20a7793b8880a4787fd7a24036663f, type: 3}
@@ -92253,6 +92220,11 @@ MonoBehaviour:
     m_lWSunColor: {r: 1, g: 0.67412204, b: 0.42855206, a: 1}
     m_lWSunIntensity: 4.25
     m_useGlobalIllumination: 1
+    m_useDensityVolumeSystem: 1
+    m_densityVolumeResolution: 3
+    m_customDensityVolumeResolution: {x: 512, y: 512, z: 512}
+    m_densityVolumeEffectType: 1
+    m_customDensityVolumeEffectType: {x: 15, y: 15, z: 15}
     m_hDSunColor: {r: 1, g: 0.78823537, b: 0.5294118, a: 1}
     m_hDSunIntensity: 2500
     m_hDSunVolumetricMultiplier: 1
@@ -96126,6 +96098,8 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: f0d3288284853394ea58e38e5dd7f195
     m_directToCamera: 0
     m_postProcessingProfileGUIDURP: 04ac2e73977d2264ca4cf6fffa78d9d7
+    m_environmentProfileHDRP: {fileID: 0}
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: 7401b5c0a355a504e85f0c764c896a8a
     m_environmentProfileGUIDHDRP: f01c038506575164b97aee2752cf628e
     m_ambientAudio: {fileID: 8300000, guid: 253e0138ab9ea684cbf525f37923b595, type: 3}
@@ -96140,6 +96114,11 @@ MonoBehaviour:
     m_lWSunColor: {r: 1, g: 0.8744252, b: 0.81960404, a: 1}
     m_lWSunIntensity: 5.5
     m_useGlobalIllumination: 1
+    m_useDensityVolumeSystem: 1
+    m_densityVolumeResolution: 3
+    m_customDensityVolumeResolution: {x: 512, y: 512, z: 512}
+    m_densityVolumeEffectType: 1
+    m_customDensityVolumeEffectType: {x: 15, y: 15, z: 15}
     m_hDSunColor: {r: 1, g: 0.8744252, b: 0.81960404, a: 1}
     m_hDSunIntensity: 100000
     m_hDSunVolumetricMultiplier: 1
@@ -100013,6 +99992,8 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: f00c6215d794e3b4fa7c9224ffe53339
     m_directToCamera: 0
     m_postProcessingProfileGUIDURP: ebf6808a9760bd04b956d636ac2feb62
+    m_environmentProfileHDRP: {fileID: 0}
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: 8e9d59221c37c3c45aa0e653c81a985e
     m_environmentProfileGUIDHDRP: df87767e946274240808803be582b5cf
     m_ambientAudio: {fileID: 8300000, guid: 3a0dd2bfddf55f747bcfc7925c2640c4, type: 3}
@@ -100027,6 +100008,11 @@ MonoBehaviour:
     m_lWSunColor: {r: 1, g: 0.55024546, b: 0.24998036, a: 1}
     m_lWSunIntensity: 5
     m_useGlobalIllumination: 1
+    m_useDensityVolumeSystem: 1
+    m_densityVolumeResolution: 3
+    m_customDensityVolumeResolution: {x: 512, y: 512, z: 512}
+    m_densityVolumeEffectType: 1
+    m_customDensityVolumeEffectType: {x: 15, y: 15, z: 15}
     m_hDSunColor: {r: 1, g: 0.4268818, b: 0.119498275, a: 1}
     m_hDSunIntensity: 1300
     m_hDSunVolumetricMultiplier: 1
@@ -103900,6 +103886,8 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: 1d8a7fb1b5c317b4ca0499e227820e25
     m_directToCamera: 0
     m_postProcessingProfileGUIDURP: 905a3a1a6e290f84ca6a624430636454
+    m_environmentProfileHDRP: {fileID: 0}
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: bf144f4122add2e4b902a2de725578f8
     m_environmentProfileGUIDHDRP: 754c9d680b0a8c14191298a69731e08f
     m_ambientAudio: {fileID: 8300000, guid: 9ebcb7af51ae1964fa6e010748771eea, type: 3}
@@ -103914,6 +103902,11 @@ MonoBehaviour:
     m_lWSunColor: {r: 0.43479353, g: 0.5892579, b: 1, a: 1}
     m_lWSunIntensity: 2.5
     m_useGlobalIllumination: 1
+    m_useDensityVolumeSystem: 1
+    m_densityVolumeResolution: 3
+    m_customDensityVolumeResolution: {x: 512, y: 512, z: 512}
+    m_densityVolumeEffectType: 1
+    m_customDensityVolumeEffectType: {x: 15, y: 15, z: 15}
     m_hDSunColor: {r: 0.42169428, g: 0.57919383, b: 1, a: 1}
     m_hDSunIntensity: 1.6
     m_hDSunVolumetricMultiplier: 1
@@ -105168,6 +105161,8 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: 069b4a41406d63c40b2a3c4bec000bbe
     m_directToCamera: 0
     m_postProcessingProfileGUIDURP: 3bdacee8fc897c94ba6e385e79e95ba6
+    m_environmentProfileHDRP: {fileID: 0}
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: e289754c3999dda45ae5411533234e50
     m_environmentProfileGUIDHDRP: 332f8c163f25360448f8e31eef40b54d
     m_ambientAudio: {fileID: 8300000, guid: 253e0138ab9ea684cbf525f37923b595, type: 3}
@@ -105182,6 +105177,11 @@ MonoBehaviour:
     m_lWSunColor: {r: 1, g: 0.9333334, b: 0.8705883, a: 0}
     m_lWSunIntensity: 5
     m_useGlobalIllumination: 1
+    m_useDensityVolumeSystem: 1
+    m_densityVolumeResolution: 3
+    m_customDensityVolumeResolution: {x: 512, y: 512, z: 512}
+    m_densityVolumeEffectType: 1
+    m_customDensityVolumeEffectType: {x: 15, y: 15, z: 15}
     m_hDSunColor: {r: 1, g: 0.9333334, b: 0.8705883, a: 1}
     m_hDSunIntensity: 100000
     m_hDSunVolumetricMultiplier: 1
@@ -109055,6 +109055,8 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: ef34dc04f7da6784d84249ab870770a0
     m_directToCamera: 0
     m_postProcessingProfileGUIDURP: fa9aefa98126463418fea44ea0fc1660
+    m_environmentProfileHDRP: {fileID: 0}
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: edae1547aaa127f4594f1c9a4c764468
     m_environmentProfileGUIDHDRP: 2cd2c6a1a30e5ba44b432730da3224de
     m_ambientAudio: {fileID: 8300000, guid: 253e0138ab9ea684cbf525f37923b595, type: 3}
@@ -109069,6 +109071,11 @@ MonoBehaviour:
     m_lWSunColor: {r: 1, g: 1, b: 1, a: 1}
     m_lWSunIntensity: 1
     m_useGlobalIllumination: 1
+    m_useDensityVolumeSystem: 1
+    m_densityVolumeResolution: 3
+    m_customDensityVolumeResolution: {x: 512, y: 512, z: 512}
+    m_densityVolumeEffectType: 1
+    m_customDensityVolumeEffectType: {x: 15, y: 15, z: 15}
     m_hDSunColor: {r: 1, g: 0.9058824, b: 0.8000001, a: 1}
     m_hDSunIntensity: 5.255177
     m_hDSunVolumetricMultiplier: 1
@@ -113332,6 +113339,8 @@ MonoBehaviour:
     lightProbeSpawnRadius: 25
     seaLevel: 50
     filterMode: 1
+  m_highDefinitionLightingProfile: {fileID: 0}
+  m_highDefinitionPostFXProfile: {fileID: 0}
   m_waterSystemMode: 2
   m_thirdPartyWaterObject: {fileID: 0}
   DefaultWaterSet: 1
@@ -113449,6 +113458,7 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 0
     m_postProcessingProfileGUIDURP: eab86dbbf9117fb4f9a54b786b342118
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: aba43adbffd9e0840b1c05267e0f8aa4
     m_underwaterFogGradient:
       serializedVersion: 2
@@ -113616,6 +113626,7 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 1
     m_postProcessingProfileGUIDURP: eab86dbbf9117fb4f9a54b786b342118
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: aba43adbffd9e0840b1c05267e0f8aa4
     m_underwaterFogGradient:
       serializedVersion: 2
@@ -113783,6 +113794,7 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 1
     m_postProcessingProfileGUIDURP: eab86dbbf9117fb4f9a54b786b342118
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: aba43adbffd9e0840b1c05267e0f8aa4
     m_underwaterFogGradient:
       serializedVersion: 2
@@ -113950,6 +113962,7 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 1
     m_postProcessingProfileGUIDURP: eab86dbbf9117fb4f9a54b786b342118
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: aba43adbffd9e0840b1c05267e0f8aa4
     m_underwaterFogGradient:
       serializedVersion: 2
@@ -114117,6 +114130,7 @@ MonoBehaviour:
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 1
     m_postProcessingProfileGUIDURP: eab86dbbf9117fb4f9a54b786b342118
+    m_postProcessProfileHDRP: {fileID: 0}
     m_postProcessingProfileGUIDHDRP: aba43adbffd9e0840b1c05267e0f8aa4
     m_underwaterFogGradient:
       serializedVersion: 2
