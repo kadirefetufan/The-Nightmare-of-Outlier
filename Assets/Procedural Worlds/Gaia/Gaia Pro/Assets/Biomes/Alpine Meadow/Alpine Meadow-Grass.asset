@@ -8,20 +8,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PW_Grass_Dactylis_GlomerataLOD0_7156_41574_19270_5082_27490_41478_-231320_30366_-143928
-  m_Shader: {fileID: 4800000, guid: 72462e7bb7591b4418a705a37fe544ac, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 70478a660a9fe5b4c869384aa0440733, type: 3}
   m_ValidKeywords:
-  - _PW_SF_WIND_ON
-  m_InvalidKeywords:
   - _ALPHATEST_ON
   - _DISABLE_DECALS
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
+  - _PW_FLORAHDRP_ON
+  - _PW_SF_WIND_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap:
     MotionVector: User
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -148,6 +150,7 @@ Material:
     - _Billboard: 1
     - _BlendMode: 0
     - _CoatMask: 0
+    - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 0
     - _CullModeForward: 0
     - _Cutoff: 0.2
@@ -161,6 +164,7 @@ Material:
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
     - _DoubleSidedEnable: 1
+    - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
     - _EmissiveColorMode: 1
@@ -199,6 +203,7 @@ Material:
     - _PPDMinSamples: 5
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
+    - _PW_FLORAHDRP: 1
     - _PW_SF_WIND: 1
     - _PW_SSSDistortion: 0.5
     - _PW_SSSPower: 1
@@ -254,8 +259,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38,
-        a: 6.8169325e-31}
+    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38, a: 6.8169325e-31}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
@@ -886,20 +890,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Flowers RedLOD0_7098_41596_19264_5080_27482_41474_-231312_30362_-143920
-  m_Shader: {fileID: 4800000, guid: 72462e7bb7591b4418a705a37fe544ac, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 70478a660a9fe5b4c869384aa0440733, type: 3}
   m_ValidKeywords:
-  - _PW_SF_WIND_ON
-  m_InvalidKeywords:
   - _ALPHATEST_ON
   - _DISABLE_DECALS
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
+  - _PW_FLORAHDRP_ON
+  - _PW_SF_WIND_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap:
     MotionVector: User
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -1026,6 +1032,7 @@ Material:
     - _Billboard: 0
     - _BlendMode: 0
     - _CoatMask: 0
+    - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 0
     - _CullModeForward: 0
     - _Cutoff: 0.2
@@ -1039,6 +1046,7 @@ Material:
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
     - _DoubleSidedEnable: 1
+    - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
     - _EmissiveColorMode: 1
@@ -1077,6 +1085,7 @@ Material:
     - _PPDMinSamples: 5
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
+    - _PW_FLORAHDRP: 1
     - _PW_SF_WIND: 1
     - _PW_SSSDistortion: 0.5
     - _PW_SSSPower: 1
@@ -1131,9 +1140,8 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.8207547, g: 0.70848167, b: 0.70848167, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38,
-        a: 6.8169325e-31}
+    - _Color: {r: 0.8207547, g: 0.70848167, b: 0.70848167, a: 1}
+    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38, a: 6.8169325e-31}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1160,19 +1168,21 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PW_Detail_WildGrass_7132_41568_18806_5092_27474_41476_-231302_30364_-143910
-  m_Shader: {fileID: 4800000, guid: 72462e7bb7591b4418a705a37fe544ac, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 70478a660a9fe5b4c869384aa0440733, type: 3}
   m_ValidKeywords:
-  - _PW_SF_WIND_ON
-  m_InvalidKeywords:
   - _ALPHATEST_ON
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
+  - _PW_FLORAHDRP_ON
+  - _PW_SF_WIND_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2475
   stringTagMap:
     MotionVector: User
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - RayTracingPrepass
   - MOTIONVECTORS
@@ -1316,6 +1326,7 @@ Material:
     - _Billboard: 0
     - _BlendMode: 0
     - _CoatMask: 0
+    - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 0
     - _CullModeForward: 0
     - _Cutoff: 0.107
@@ -1343,6 +1354,7 @@ Material:
     - _DistortionVectorBias: -1
     - _DistortionVectorScale: 2
     - _DoubleSidedEnable: 1
+    - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
     - _EmissiveColorMode: 1
@@ -1387,6 +1399,7 @@ Material:
     - _PW_CoverLayer0Smoothness: 0.5
     - _PW_CoverLayer0Tiling: 64
     - _PW_CoverLayer0Wrap: 0.01
+    - _PW_FLORAHDRP: 1
     - _PW_SF_COVER: 0
     - _PW_SF_WIND: 1
     - _PW_SSSDistortion: 0.522
@@ -1443,11 +1456,10 @@ Material:
     - Vector3_5cd98b389c0a4a8fb21134d1589c00aa: {r: 0.65, g: 0, b: -0.42, a: 0}
     - _BaseColor: {r: 0.5764706, g: 0.5019608, b: 0.45882353, a: 0}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1.4980392, g: 1.4980392, b: 1.4980392, a: 1}
+    - _Color: {r: 0.5764706, g: 0.5019608, b: 0.45882353, a: 0}
     - _ColorA: {r: 1, g: 0.033018887, b: 0.033018887, a: 1}
     - _ColorB: {r: 0.46226418, g: 0.032707367, b: 0.032707367, a: 1}
-    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38,
-        a: 6.8169325e-31}
+    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38, a: 6.8169325e-31}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
@@ -8740,20 +8752,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PW_Grass_Pink_Flower_01LOD0_7118_41562_19262_5076_27480_41482_-231308_30368_-143916
-  m_Shader: {fileID: 4800000, guid: 72462e7bb7591b4418a705a37fe544ac, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 70478a660a9fe5b4c869384aa0440733, type: 3}
   m_ValidKeywords:
-  - _PW_SF_WIND_ON
-  m_InvalidKeywords:
   - _ALPHATEST_ON
   - _DISABLE_DECALS
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
+  - _PW_FLORAHDRP_ON
+  - _PW_SF_WIND_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap:
     MotionVector: User
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -8880,6 +8894,7 @@ Material:
     - _Billboard: 0
     - _BlendMode: 0
     - _CoatMask: 0
+    - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 0
     - _CullModeForward: 0
     - _Cutoff: 0.2
@@ -8893,6 +8908,7 @@ Material:
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
     - _DoubleSidedEnable: 1
+    - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
     - _EmissiveColorMode: 1
@@ -8931,6 +8947,7 @@ Material:
     - _PPDMinSamples: 5
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
+    - _PW_FLORAHDRP: 1
     - _PW_SF_WIND: 1
     - _PW_SSSDistortion: 0.5
     - _PW_SSSPower: 1
@@ -8985,9 +9002,8 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.5764706, g: 0.5764706, b: 0.5764706, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38,
-        a: 6.8169325e-31}
+    - _Color: {r: 0.5764706, g: 0.5764706, b: 0.5764706, a: 1}
+    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38, a: 6.8169325e-31}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
@@ -9014,8 +9030,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Flowers PurpleLOD0_7146_41592_19266_5074_27484_41470_-231316_30360_-143924
-  m_Shader: {fileID: -6465566751694194690, guid: 70478a660a9fe5b4c869384aa0440733,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 70478a660a9fe5b4c869384aa0440733, type: 3}
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _DISABLE_DECALS
@@ -9266,8 +9281,7 @@ Material:
     - _BaseColor: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
-    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38,
-        a: 6.8169325e-31}
+    - _DiffusionProfileAsset: {r: -9.2396434e+33, g: 2.6337685e-36, b: 2.14897e-38, a: 6.8169325e-31}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
